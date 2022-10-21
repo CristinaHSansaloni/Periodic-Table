@@ -1,10 +1,12 @@
-// Fichero src/components/App.js
+import React from 'react';
 import '../styles/App.css';
+import PeriodicTable from './PeriodicTable';
 
 function App() {
   return (
-    <div>
-      <h1>Hola mundo</h1>
+    <div className='App'>
+      <h1>Periodic Table</h1>
+      <PeriodicTable />
     </div>
   );
 }
