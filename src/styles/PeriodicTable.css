@@ -1,7 +1,7 @@
 .periodic-table {
     display: grid;
-    grid-template-columns: repeat(18, 64px);
-    grid-template-rows: repeat(10, 64px);
+    grid-template-columns: repeat(18, 55px);
+    grid-template-rows: repeat(10, 55px);
     position: absolute;
     grid-gap: 4px;
     top: 50%;
@@ -10,16 +10,16 @@
     cursor: pointer;
 }
 .element {
-    background: white;
-    border: 1px solid #aaa;
+    background: #B7EAF7;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
 }
 .element:hover {
-    transform: scale(1.25, 1.25);
+    transform: scale(2, 2);
     z-index: 1;
+    border: 2px solid white;
 }
 .element .number {
     font-size: 8px;

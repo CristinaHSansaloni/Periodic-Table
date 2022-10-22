@@ -3,14 +3,14 @@ import data from "../PeriodicTableJSON.json";
 import "../styles/PeriodicTable.css";
 
 const colorMap = {
-    "noble gas": "#FFBC42",
-    "alkaline earth metal": "#EC674E",
-    "diatomic nonmetal": "#D81159",
-    "alkali metal": "#8F2D56",
-    "transition metal": "#58586B",
-    "post-transition metal": "#218380",
-    lanthanide: "#4AABAF",
-    metalloid: "#73D2DE",
+    "noble gas": "#96BDC4",
+    "alkaline earth metal": "#EFF2E6",
+    "diatomic nonmetal": "#EAABBC",
+    "alkali metal": "#B5AfBC",
+    "transition metal": "#CBAACB",
+    "post-transition metal": "#B6CFB6",
+    "lanthanide": "#FDD4C1",
+    "metalloid": "#C29BA3",
 };
 
 const PeriodicTable = () => {
@@ -23,7 +23,7 @@ const PeriodicTable = () => {
                     style={{
                         gridColumn: element.xpos,
                         gridRow: element.ypos,
-                        borderColor: colorMap[element.category],
+                        backgroundColor: colorMap[element.category],
                     }}
                 >
                     <strong>{element.symbol}</strong>
